@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.ball {
+				float: left;
+				position: relative;
+				border-radius: 10px;
+				width: 20px;
+				height: 20px;
+				margin: 20px;
+				animation: jump 2s ease infinite alternate;
+			}
+			
+			@keyframes jump{
+				0% {
+					background: blue;
+				}
+				50% {
+					transform: translate(20px, 100px);
+					background: red;
+				}
+				100% {
+					transform: translate(20px, 0px);
+					background: coral;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="ball">
+			
+		</div>
+		<div class="ball" style="animation-delay: 1s;">
+		！
+		</div>
+	</body>
+</html>
